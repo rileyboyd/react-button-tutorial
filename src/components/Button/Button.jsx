@@ -1,4 +1,5 @@
 import PropTypes from "prop-types";
+import "./Button.module.css";
 
 const Button = ({ onClick, children, disabled = "false" }) => (
   <button onClick={onClick} disabled={disabled}>
