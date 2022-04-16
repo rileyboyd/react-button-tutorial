@@ -10,7 +10,9 @@ function App() {
     <div className="App">
       <section className="btn-wrapper">
         <h3>Button was {btnWasClicked ? "clicked" : "not clicked"}</h3>
-        <Button onClick={btnClickHandler}>Click Me</Button>
+        <Button onClick={btnClickHandler} disabled={btnWasClicked}>
+          Click Me
+        </Button>
       </section>
     </div>
   );
